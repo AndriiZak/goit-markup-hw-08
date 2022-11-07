@@ -1,0 +1,79 @@
+.checkbox__terms {
+
+    color: var(--color-text-grey);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+}
+
+.checkbox__link {
+    color: var(--color-brand);
+}
+
+.checkbox__input {
+    appearance: none;
+}
+
+.checkbox__label {
+    margin-left: 12px;
+    padding-left: 23px;
+    position: relative;
+
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+}
+
+.checkbox__label::before {
+    position: absolute;
+    z-index: 1;
+    width: 16px;
+    height: 15px;
+    left: 0px;
+    top: 0px;
+    content: "";
+
+    background: var(--color-brand);
+    border-radius: 2px;
+    opacity: 0;
+}
+
+.checkbox__label::after {
+
+    position: absolute;
+    z-index: 2;
+    width: 11px;
+    height: 8px;
+    left: 3px;
+    top: 4px;
+
+    content: "";
+
+    background-image: url(../images/check-mark-icon.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: 0;
+
+}
+
+.checkbox__icon {
+    position: absolute;
+    top: 0px;
+    left: 0;
+    text-align: center;
+    opacity: 1;
+}
+
+.checkbox__icon:hover {
+    opacity: 0;
+}
+
+.checkbox__input:checked+.checkbox__label::after {
+    opacity: 1;
+}
+
+.checkbox__input:checked+.checkbox__label::before {
+    opacity: 1;
+}

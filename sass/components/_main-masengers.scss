@@ -1,0 +1,32 @@
+.main-masengers__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.main-masenger__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: var(--transition-header);
+    transition-timing-function: var(--transition-cobic-bezier);
+
+    width: 44px;
+    height: 44px;
+    fill: var(--color-icon);
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    ;
+}
+
+.main-masengers__li {
+    width: 44px;
+    height: 44px;
+}
+
+.main-masenger__link:hover,
+.main-masenger__link:focus {
+    fill: var(--color-section);
+    background-color: var(--color-brand);
+}
