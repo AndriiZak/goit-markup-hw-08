@@ -49,7 +49,11 @@ footer {
 }
 
 .section {
-    padding: 94px 0 94px 0;
+    padding: 60px 0 60px 0;
+
+        @media screen and (min-width:480px) {}
+            
+        @media screen and (min-width:720px) {padding: 94px 0 94px 0;}
 }
 
 .container {
@@ -57,4 +61,14 @@ footer {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 15px;
+    
+    @media screen and (min-width:480px) {
+        max-width: 768px;
+    }
+        
+    @media screen and (min-width:720px) {
+        max-width: 1200px;
+    }
+    
+
 }

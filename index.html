@@ -57,6 +57,11 @@
               +38 096 111 11 11</a>
           </li>
         </ul>
+        <div class="burger-button js-open-menu">
+          <svg class="menu__icon" aria-label="button mobile menu" width="40px" height="40px">
+            <use class="menu-cross" href="./images/symbol-defs.svg#icon-menu"></use>
+          </svg>
+        </div>
       </div>
     </div>
   </header>
@@ -107,25 +112,25 @@
     <section class="what-do">
       <div class="container">
         <h2 class="what-do__title">Чим ми займаємося</h2>
-        <ul class="whot-do__style">
-          <li class="whot-do__list">
-            <div class="whot-do__produkt">
+        <ul class="what-do__style">
+          <li class="what-do__list">
+            <div class="what-do__product">
               <img src="./images/hero/box1.jpg" alt="Друкування коду на клавіатурі" width="370" height="294" />
-              <p class="whot-do__text">Десктопні додатки</p>
+              <p class="what-do__text">Десктопні додатки</p>
             </div>
           </li>
-          <li class="whot-do__list">
-            <div class="whot-do__produkt">
+          <li class="what-do__list">
+            <div class="what-do__product">
               <img src="./images/hero/box2.jpg" alt="Створення мобільних додатків на компютері" width="370"
                 height="294" />
-              <p class="whot-do__text">Мобільні додатки</p>
+              <p class="what-do__text">Мобільні додатки</p>
             </div>
           </li>
-          <li class="whot-do__list">
-            <div class="whot-do__produkt">
+          <li class="what-do__list">
+            <div class="what-do__product">
               <img src="./images/hero/box3.jpg" alt="Планшет на якаму зображена палітра кольорів" width="370"
                 height="294" />
-              <p class="whot-do__text">Дизайнерські рішення</p>
+              <p class="what-do__text">Дизайнерські рішення</p>
             </div>
           </li>
         </ul>
@@ -136,35 +141,44 @@
         <h2 class="our-workers__title">Наша команда</h2>
         <ul class="our-workers__list">
           <li class="our-workers__oll">
-            <img src="./images/hero/img.jpg" alt="Image Igor Demyanenko " width="270" height="260" />
+            <picture class="our-workers__thumb">
+              <source media="(max-width: 479px)"
+                srcset="./images/hero/team1-mobile.jpg 1x, ./images/hero/team1-mobile@2x.jpg 2x " width="450"
+                height="460">
+              <source media="(max-width: 767px)"
+                srcset="./images/hero/team1-tablet.jpg 1x, ./images/hero/team1-tablet@2x.jpg 2x" width="354px"
+                height="536px">
+              <img srcset="./images/hero/team1-desktop.jpg 1x, ./images/hero/team1-desktop@2x.jpg 2x"
+                alt="Image Igor Demyanenko " width="270" height="260" />
+            </picture>
             <div class="our-workers__oll-text">
               <h3 class="our-workers__subtitle">Ігор Дем'яненко</h3>
               <p class="our-workers__text" lang="en">Product Designer</p>
 
               <ul class="main-masengers__list">
                 <li class="main-masengers__li">
-                  <a href="#" class="main-masenger__link">
+                  <a href="#" class="main-masengers__link">
                     <svg width="20px" height="20px">
                       <use href="./images/symbol-defs.svg#icon-instagram"></use>
                     </svg>
                   </a>
                 </li>
                 <li class="main-masengers__li">
-                  <a href="#" class="main-masenger__link">
+                  <a href="#" class="main-masengers__link">
                     <svg width="20px" height="20px">
                       <use href="./images/symbol-defs.svg#icon-twitter"></use>
                     </svg>
                   </a>
                 </li>
                 <li class="main-masengers__li">
-                  <a href="#" class="main-masenger__link">
+                  <a href="#" class="main-masengers__link">
                     <svg width="20" height="20">
                       <use href="./images/symbol-defs.svg#icon-facebook"></use>
                     </svg>
                   </a>
                 </li>
                 <li class="main-masengers__li">
-                  <a href="#" class="main-masenger__link">
+                  <a href="#" class="main-masengers__link">
                     <svg width="20px" height="20px">
                       <use href="./images/symbol-defs.svg#icon-linkedin"></use>
                     </svg>
@@ -174,35 +188,45 @@
             </div>
           </li>
           <li class="our-workers__oll">
-            <img src=" ./images/hero/img1.jpg" alt="Image Olga Repina" width="270" height="260" />
+            <picture class="our-workers__thumb">
+              <source media="(max-width: 479px)"
+                srcset="./images/hero/team2-mobile.jpg 1x, ./images/hero/team2-mobile@2x.jpg 2x " width="450"
+                height="460">
+              <source media="(max-width: 767px)"
+                srcset="./images/hero/team2-tablet.jpg 1x, ./images/hero/team2-tablet@2x.jpg 2x" width="354px"
+                height="536px">
+              <img media="(max-width: 1199px)"
+                srcset="./images/hero/team2-desktop.jpg 1x, ./images/hero/team2-desktop@2x.jpg 2x"
+                alt="Image Igor Demyanenko " width="270" height="260" />
+            </picture>
             <div class="our-workers__oll-text">
               <h3 class="our-workers__subtitle">Ольга Рєпіна</h3>
               <p lang="en" class="our-workers__text">Frontend Developer</p>
 
               <ul class="main-masengers__list">
                 <li class="main-masengers__li">
-                  <a href="#" class="main-masenger__link">
+                  <a href="#" class="main-masengers__link">
                     <svg width="20px" height="20px">
                       <use href="./images/symbol-defs.svg#icon-instagram"></use>
                     </svg>
                   </a>
                 </li>
                 <li class="main-masengers__li">
-                  <a href="#" class="main-masenger__link">
+                  <a href="#" class="main-masengers__link">
                     <svg width="20px" height="20px">
                       <use href="./images/symbol-defs.svg#icon-twitter"></use>
                     </svg>
                   </a>
                 </li>
                 <li class="main-masengers__li">
-                  <a href="#" class="main-masenger__link">
+                  <a href="#" class="main-masengers__link">
                     <svg width="20px" height="20px">
                       <use href="./images/symbol-defs.svg#icon-facebook"></use>
                     </svg>
                   </a>
                 </li>
                 <li class="main-masengers__li">
-                  <a href="#" class="main-masenger__link">
+                  <a href="#" class="main-masengers__link">
                     <svg width="20px" height="20px">
                       <use href="./images/symbol-defs.svg#icon-linkedin"></use>
                     </svg>
@@ -212,35 +236,44 @@
             </div>
           </li>
           <li class="our-workers__oll">
-            <img src=" ./images/hero/img2.jpg" alt="Image Mukola Tarasov" width="270" height="260" />
+            <picture class="our-workers__thumb">
+              <source media="(max-width: 479px)"
+                srcset="./images/hero/team3-mobile.jpg 1x, ./images/hero/team3-mobile@2x.jpg 2x " width="450"
+                height="460">
+              <source media="(max-width: 767px)"
+                srcset="./images/hero/team3-tablet.jpg 1x, ./images/hero/team3-tablet@2x.jpg 2x" width="354px"
+                height="536px">
+              <img srcset="./images/hero/team3-desktop.jpg 1x, ./images/hero/team3-desktop@2x.jpg 2x"
+                alt="Image Igor Demyanenko " width="270" height="260" />
+            </picture>
             <div class="our-workers__oll-text">
               <h3 class="our-workers__subtitle">Микола Тарасов</h3>
               <p class="our-workers__text" lang="en">Marketing</p>
 
               <ul class="main-masengers__list">
                 <li class="main-masengers__li">
-                  <a href="#" class="main-masenger__link">
+                  <a href="#" class="main-masengers__link">
                     <svg width="20px" height="20px">
                       <use href="./images/symbol-defs.svg#icon-instagram"></use>
                     </svg>
                   </a>
                 </li>
                 <li class="main-masengers__li">
-                  <a href="#" class="main-masenger__link">
+                  <a href="#" class="main-masengers__link">
                     <svg width="20px" height="20px">
                       <use href="./images/symbol-defs.svg#icon-twitter"></use>
                     </svg>
                   </a>
                 </li>
                 <li class="main-masengers__li">
-                  <a href="#" class="main-masenger__link">
+                  <a href="#" class="main-masengers__link">
                     <svg width="20px" height="20px">
                       <use href="./images/symbol-defs.svg#icon-facebook"></use>
                     </svg>
                   </a>
                 </li>
                 <li class="main-masengers__li">
-                  <a href="#" class="main-masenger__link">
+                  <a href="#" class="main-masengers__link">
                     <svg width="20px" height="20px">
                       <use href="./images/symbol-defs.svg#icon-linkedin"></use>
                     </svg>
@@ -250,35 +283,44 @@
             </div>
           </li>
           <li class="our-workers__oll">
-            <img src=" ./images/hero/img3.jpg" alt="Image Muhailo Irmakov" width="270" height="260" />
+            <picture class="our-workers__thumb">
+              <source media="(max-width: 479px)"
+                srcset="./images/hero/team4-mobile.jpg 1x, ./images/hero/team4-mobile@2x.jpg 2x " width="450"
+                height="460">
+              <source media="(max-width: 767px)"
+                srcset="./images/hero/team4-tablet.jpg 1x, ./images/hero/team4-tablet@2x.jpg 2x" width="354px"
+                height="536px">
+              <img srcset="./images/hero/team4-desktop.jpg 1x, ./images/hero/team4-desktop@2x.jpg 2x"
+                alt="Image Igor Demyanenko " width="270" height="260" />
+            </picture>
             <div class="our-workers__oll-text">
               <h3 class="our-workers__subtitle">Михайло Єрмаков</h3>
               <p class="our-workers__text" lang="en">UI Designer</p>
 
               <ul class="main-masengers__list">
                 <li class="main-masengers__li">
-                  <a href="#" class="main-masenger__link">
+                  <a href="#" class="main-masengers__link">
                     <svg width="20px" height="20px">
                       <use href="./images/symbol-defs.svg#icon-instagram"></use>
                     </svg>
                   </a>
                 </li>
                 <li class="main-masengers__li">
-                  <a href="#" class="main-masenger__link">
+                  <a href="#" class="main-masengers__link">
                     <svg width="20px" height="20px">
                       <use href="./images/symbol-defs.svg#icon-twitter"></use>
                     </svg>
                   </a>
                 </li>
                 <li class="main-masengers__li">
-                  <a href="#" class="main-masenger__link">
+                  <a href="#" class="main-masengers__link">
                     <svg width="20px" height="20px">
                       <use href="./images/symbol-defs.svg#icon-facebook"></use>
                     </svg>
                   </a>
                 </li>
                 <li class="main-masengers__li">
-                  <a href="#" class="main-masenger__link">
+                  <a href="#" class="main-masengers__link">
                     <svg width="20px" height="20px">
                       <use href="./images/symbol-defs.svg#icon-linkedin"></use>
                     </svg>
@@ -342,58 +384,61 @@
   </main>
   <footer class="footer" id="contact">
     <div class="container footer__container">
-      <div>
-        <a href="/" class="footer__logo"><span class="footer-logo--web">Web</span><span
-            class="footer__logo--studio">Studio</span></a>
-        <address class="footer__address">
-          <ul class="footer__address--list">
-            <li class="footer__map">
-              <a href="https://goo.gl/maps/AvNRvpogiTNFUgvv9" target="_blank" rel="noreferrer noopener"
-                class="footer__link-map">м. Київ, пр-т Лесі Українки, 26</a>
+      <div class="footer__nav">
+        <div>
+          <a href="/" class="footer__logo"><span class="footer-logo--web">Web</span><span
+              class="footer__logo--studio">Studio</span></a>
+          <address class="footer__address">
+            <ul class="footer__address--list">
+              <li class="footer__map">
+                <a href="https://goo.gl/maps/AvNRvpogiTNFUgvv9" target="_blank" rel="noreferrer noopener"
+                  class="footer__link-map">м. Київ, пр-т Лесі Українки, 26</a>
+              </li>
+              <li class="footer__mail">
+                <a href="mailto:info@devstudio.com"
+                  class="footer__link footer__link--transform  ">info@devstudio.com</a>
+              </li>
+              <li class="footer__tel">
+                <a href="tel:+380961111111" class="footer__link footer__link--transform  ">+38 096 111 11 11</a>
+              </li>
+            </ul>
+          </address>
+        </div>
+
+        <div class="footer-masengers">
+          <h1 class="visually-hidden">Delite</h1>
+          <h2 class="footer-masengers__subtitle">Приєднуйтесь</h2>
+          <ul class="footer-masengers__list">
+            <li class="footer-masengers__li">
+              <a href="#" class="footer-masengers__link">
+                <svg class="footer-masengers__icon" width="20px" height="20px">
+                  <use href="./images/symbol-defs.svg#icon-instagram"></use>
+                </svg>
+              </a>
             </li>
-            <li class="footer__mail">
-              <a href="mailto:info@devstudio.com" class="footer__link footer__link--transform  ">info@devstudio.com</a>
+            <li class="footer-masengers__li">
+              <a href="#" class="footer-masengers__link">
+                <svg class="footer-masengers__icon" width="20px" height="20px">
+                  <use href="./images/symbol-defs.svg#icon-twitter"></use>
+                </svg>
+              </a>
             </li>
-            <li class="footer__tel">
-              <a href="tel:+380961111111" class="footer__link footer__link--transform  ">+38 096 111 11 11</a>
+            <li class="footer-masengers__li">
+              <a href="#" class="footer-masengers__link">
+                <svg class="footer-masengers__icon" width="20px" height="20px">
+                  <use href="./images/symbol-defs.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-masengers__li">
+              <a href="#" class="footer-masengers__link">
+                <svg class="footer-masengers__icon" width="20px" height="20px">
+                  <use href="./images/symbol-defs.svg#icon-linkedin"></use>
+                </svg>
+              </a>
             </li>
           </ul>
-        </address>
-      </div>
-
-      <div class="footer-masengers">
-        <h1 class="visually-hidden">Delite</h1>
-        <h2 class="footer-masengers__subtitle">Приєднуйтесь</h2>
-        <ul class="footer-masengers__list">
-          <li class="footer-masengers__li">
-            <a href="#" class="footer-masengers__link">
-              <svg class="footer-masengers__icon" width="20px" height="20px">
-                <use href="./images/symbol-defs.svg#icon-instagram"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="footer-masengers__li">
-            <a href="#" class="footer-masengers__link">
-              <svg class="footer-masengers__icon" width="20px" height="20px">
-                <use href="./images/symbol-defs.svg#icon-twitter"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="footer-masengers__li">
-            <a href="#" class="footer-masengers__link">
-              <svg class="footer-masengers__icon" width="20px" height="20px">
-                <use href="./images/symbol-defs.svg#icon-facebook"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="footer-masengers__li">
-            <a href="#" class="footer-masengers__link">
-              <svg class="footer-masengers__icon" width="20px" height="20px">
-                <use href="./images/symbol-defs.svg#icon-linkedin"></use>
-              </svg>
-            </a>
-          </li>
-        </ul>
+        </div>
       </div>
       <div class="footer-form">
         <p class="footer-form__title">Підпишіться на розсилку</p>
@@ -463,6 +508,58 @@
       </form>
     </div>
   </div>
+
+  <!-- Social menu -->
+  <div class="menu js-menu-container">
+    <button class="menu__button js-close-menu" type="button" aria-expanded="false">
+      <svg class="menu__icon" aria-label="button mobile menu" width="40px" height="40px">
+
+        <use class="menu-burger" href="./images/symbol-defs.svg#icon-close"></use>
+      </svg>
+    </button>
+
+    <ul class="menu__nav">
+      <li class="menu__li">
+        <a href="./index.html" class="menu__link menu__link--studio">Студія</a>
+      </li>
+      <li class="menu__li">
+        <a href="./portfolio.html" class="menu__link">Портфоліо</a>
+      </li>
+      <li class="menu__li">
+        <a href="#contact" class="menu__link">Контакти</a>
+      </li>
+    </ul>
+    <ul class="menu__list">
+      <li class="menu__li-emai">
+        <a href="mailto:info@devstudio.com" class="menu__email">
+          info@devstudio.com
+        </a>
+      </li>
+      <li class="menu__li-tel">
+        <a href="tel:+380961111111" class="menu__tel">
+          +38 096 111 11 11</a>
+      </li>
+    </ul>
+
+    <ul class="menu-social">
+      <li class="menu-social__item">
+        <a class="menu-social__link" href="./">Instagram</a>
+      </li>
+      <li class="menu-social__item">
+        <a class="menu-social__link" href="./">Twitter</a>
+      </li>
+      <li class="menu-social__item">
+        <a class="menu-social__link" href="./">Facebook</a>
+      </li>
+      <li class="menu-social__item">
+        <a class="menu-social__link" href="./">Linkedin</a>
+      </li>
+    </ul>
+  </div>
+  <!-- <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"></script> -->
+  <script defer src="js/mobile-menu.js"></script>
   <script src="./js/modal.js"></script>
 </body>
 

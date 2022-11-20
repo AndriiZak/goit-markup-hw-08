@@ -6,38 +6,68 @@
     font-size: 36px;
     line-height: 1.16;
     letter-spacing: 0.03em;
-}
 
-.customers__list {
-    display: flex;
-    align-items: center;
-    gap: 30px;
-}
 
-.customers__link {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: var(--transition-header);
-    transition-timing-function: var(--transition-cobic-bezier);
+    &__list {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        flex-wrap: wrap;
 
-    fill: var(--color-icon);
-    width: 170px;
-    height: 92px;
-    border: 1px solid var(--color-icon);
-    border-radius: 4px;
+        @media screen and (min-width:480px) {
+            display: flex;
+            }
+        
+        @media screen and (min-width:768px) {
+            display: flex;
+        }
+    }
 
-}
+    &__link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: var(--transition-header);
+        transition-timing-function: var(--transition-cobic-bezier);
 
-.customers__link:hover,
-.customers__link:focus {
+        fill: var(--color-icon);
+        width: 170px;
+        height: 92px;
+        border: 1px solid var(--color-icon);
+        border-radius: 4px;
 
-    fill: var(--color-brand);
-    border: 1px solid var(--color-brand);
+        @media screen and (min-width:480px) {
+                gap: 30px;
+                width: 170px;
+                flex-basis: calc((100% - 150px)/5);
+            }
 
-}
+        @media screen and (min-width:768px) {
+            
+        }
 
-.customers__li {
-    width: 170px;
-    height: 92px;
+        &:hover,:focus {
+        
+                fill: var(--color-brand);
+                border: 1px solid var(--color-brand);
+        
+            }
+
+    }
+
+    
+
+    &__li {
+        width: 170px;
+        height: 92px;
+
+        @media screen and (min-width:480px) {
+                gap: 30px;
+                width: 216px;
+            }
+        
+        @media screen and (min-width:768px) {
+            width: 170px;
+        }
+    }
 }

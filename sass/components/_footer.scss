@@ -1,71 +1,146 @@
 
 .footer {
     padding: 60px 0;
-}
+    text-align: center;
 
-.footer__container {
-    display: flex;
-}
+    @media screen and (min-width:480px) {
+        text-align: left;
+        }
+    
+        @media screen and (min-width:768px) {
+        text-align: left;
+        }
 
-.footer-logo--web {
-    color: var(--color-brand)
-}
+    &__container {
+        display: block;
 
-.footer__logo--studio {
-    color: var(--color-section);
-}
+        @media screen and (min-width:480px) {
+            display: block;
+        }
+            
+        @media screen and (min-width:768px) {
+            display: flex;
+        }
+    }
 
-.footer__logo {
-    display: block;
-    margin-bottom: 20px;
+    &__nav {
 
-    color: var(--color-section);
-    text-decoration: none;
-    font-family: 'Raleway', sans-serif;
-    font-size: 26px;
-    line-height: 1.19;
-    font-weight: 700;
-    letter-spacing: 0.03em;
-}
 
-.footer__address {
-    font-style: normal;
-}
+        @media screen and (min-width:480px) {
+                display: flex;
+                    text-align: center;
+                    margin: 0px 61px 60px 71px;
+                    margin-bottom: 60px;
+            }
 
-.footer__link-map {
-    cursor: pointer;
-    color: var(--color-section);
-    text-decoration: none;
-    font-family: inherit;
-    font-weight: 400;
-    letter-spacing: 0.03em;
-}
+        @media screen and (min-width:768px) {
+            text-align: left;
+            margin: 0;
+        }
+    }
 
-.footer__link--transform {
-    text-decoration: none;
-    transition: var(--transition-header);
-    transition-timing-function: var(--transition-cobic-bezier);
+    &-logo--web {
+        color: var(--color-brand)
+    }
 
-    color: var(--color-footer-text);
-    font-size: 14px;
-    line-height: 1.71;
-    font-family: inherit;
-    font-weight: 400;
-    letter-spacing: 0.03em;
-}
+    &__logo--studio {
+        color: var(--color-section);
+    }
 
-.footer__link--transform:hover,
-.footer__link--transform:focus {
-    color: var(--color-brand);
+    &__logo {
+        display: block;
+        margin-bottom: 20px;
 
-}
+        color: var(--color-section);
+        text-decoration: none;
+        font-family: 'Raleway', sans-serif;
+        font-size: 26px;
+        line-height: 1.19;
+        font-weight: 700;
+        letter-spacing: 0.03em;
+    }
 
-.footer__map {
+    &__address {
+        font-style: normal;
+    }
 
-    margin-bottom: 9px;
-}
+    &__link-map {
+        cursor: pointer;
+        color: var(--color-section);
+        text-decoration: none;
+        font-family: inherit;
+        font-weight: 400;
+        letter-spacing: 0.03em;
+    }
 
-.footer__mail {
+    &__link--transform {
+        text-decoration: none;
+        transition: var(--transition-header);
+        transition-timing-function: var(--transition-cobic-bezier);
 
-    margin-bottom: 9px;
+
+
+        color: var(--color-footer-text);
+        font-size: 14px;
+        line-height: 1.71;
+        font-family: inherit;
+        font-weight: 400;
+        letter-spacing: 0.03em;
+
+        @media screen and (min-width:480px) {
+            margin-right: 0px;;
+        }
+
+        @media screen and (min-width:768px) {
+            margin-right: 0px;;
+        }
+
+            &:hover,:focus {
+                    color: var(--color-brand);
+            
+                }
+
+        
+    }
+
+
+
+    &__map {
+
+        margin-bottom: 8px;
+
+        @media screen and (min-width:480px) {
+            margin-bottom: 9px;
+        }
+        
+        @media screen and (min-width:768px) {
+            margin-bottom: 9px;
+        }
+    }
+
+    &__mail {
+
+        margin-bottom: 8px;
+
+        @media screen and (min-width:480px) {
+                margin-bottom: 9px;
+            }
+        
+        @media screen and (min-width:768px) {
+            margin-bottom: 9px;
+        }
+    }
+               
+    
+    &__tel {
+        margin-bottom: 60px;
+        
+            @media screen and (min-width:480px) {
+                margin-bottom: 0px;
+            }
+        
+            @media screen and (min-width:768px) {
+                margin-bottom: 0px;
+            }
+    }
 }
