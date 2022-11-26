@@ -13,6 +13,11 @@
         line-height: 1.2;
         letter-spacing: 0.03em;
 
+        @media screen and (min-width:480px) {
+            font-size: 24px;
+            line-height: 1.16;
+        }
+
     }
 
     &__web {
@@ -29,7 +34,7 @@
         display: none;
         color: var(--color-section);
 
-        @media screen and (min-width:690px) {
+        @media screen and (min-width:480px) {
                 display: block;
             }
         
@@ -41,9 +46,15 @@
 
     &__stile {
 
-        gap: 93px;
+        gap: 88px;
         display: flex;
         align-items: center;
+
+        @media screen and (min-width:480px) {
+                width: calc((100% - 88px)/2)
+            }
+
+
     }
 
     &__contact {
@@ -51,7 +62,7 @@
         display: none;
         gap: 40px;
 
-        @media screen and (min-width:690px){
+        @media screen and (min-width:480px){
             display: block;
             }
         
@@ -62,7 +73,10 @@
 
     &__nav {
         display: flex;
-        gap: 50px;
+        gap: 40px;
+
+       
+
     }
 
     &__link--conteiner-nav {
@@ -101,6 +115,10 @@
     &__line {
         display: flex;
         position: relative;
+
+        @media screen and (min-width:480px) {
+                width: calc((100% - 50px)/4)
+            }
     }
 
     &__carent-link--conteiner-nav::after {
