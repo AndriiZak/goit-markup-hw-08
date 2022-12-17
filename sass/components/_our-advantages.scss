@@ -47,18 +47,8 @@
         margin-bottom: 30px;
         flex-basis:calc((100% - 90px)/4);
 
-        &::before {
-                display: block;
-                content: '';
-                margin-bottom: 30px;
-        
-                height: 120px;
-                background-repeat: no-repeat;
-                background-position: center;
-                background-color: #F5F4FA;
-                border-radius: 4px;
-        
-            }
+      
+            
             @media screen and (min-width:480px) {
                 flex-basis: calc((100% - 30px)/2);
                 max-width: 346px;
@@ -70,20 +60,15 @@
             }
     }
 
+    &__stile {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 120px;
 
-    &__li--png-antenna::before {
-        background-image: url(../images/antenna.png);
+        background-color: #F5F4FA;
+        margin-bottom: 30px;
+        border-radius: 4px;
     }
 
-    &__li--png-clock::before {
-        background-image: url(../images/clock.png);
-    }
-
-    &__li--png-diagram::before {
-        background-image: url(../images/diagram.png);
-    }
-
-    &__li--png-group::before {
-        background-image: url(../images/astronaut.png);
-    }
 }
