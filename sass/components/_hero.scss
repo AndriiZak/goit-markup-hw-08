@@ -10,7 +10,7 @@
     align-items: center;
     width: 100%;
 
-    max-width: 480px;
+    max-width: 768px;
     height: 400px;
     top: 80px;
 
@@ -28,21 +28,21 @@
 
         }
             
-    @media screen and (min-width:480px) {
+    @media screen and (min-width:768px) {
             background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
                 url('../images/hero-img-tablet.jpeg');
 
             @media screen and (min-device-pixel-ratio: 2),
             screen and (min-resolution: 192dpi),
             screen and (min-resolution: 2dppx) {
-                max-width: 768px;
+                max-width:1200px;
                 height: 400px;
                 background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
                     url('../images/hero-img-tablet@2x.jpeg');
             }
         }
     
-    @media screen and (min-width:768px) {
+    @media screen and (min-width:1200px) {
             max-width: 1600px;
             height: 600px;
             margin: 0 auto;
@@ -76,12 +76,12 @@
         line-height: 1.61;
         
 
-        @media screen and (min-width:480px) {
+        @media screen and (min-width:768px) {
             width: 360px;
 
         }
         
-        @media screen and (min-width:768px) {
+        @media screen and (min-width:1200px) {
             width: 696px;
             font-size: 44px;
             line-height: 1.36;
@@ -114,12 +114,12 @@
     line-height: 1.87;
             
 
-            @media screen and (min-width:480px) {
+            @media screen and (min-width:768px) {
                 padding: 10px 24px;
                    
                 }
             
-                @media screen and (min-width:768px) {
+                @media screen and (min-width:1200px) {
 
                         font-size: 16px;
                         letter-spacing: 0.06em;

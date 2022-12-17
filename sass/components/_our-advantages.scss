@@ -5,12 +5,12 @@
         padding-left: 0;
         gap: 30px;
 
-        @media screen and (min-width:480px) {
+        @media screen and (min-width:768px) {
             display: flex;
             flex-wrap: wrap;
         }
                 
-        @media screen and (min-width:768px) {
+        @media screen and (min-width:1200px) {
             display: flex;
         }
     }
@@ -26,11 +26,11 @@
         line-height: 1.14;
         letter-spacing: 0.03em;
 
-        @media screen and (min-width:480px) {
+        @media screen and (min-width:768px) {
             justify-content:start;
         }
                 
-        @media screen and (min-width:768px) {
+        @media screen and (min-width:1200px) {
             display: block;
         }
     }
@@ -49,12 +49,12 @@
 
       
             
-            @media screen and (min-width:480px) {
+            @media screen and (min-width:4768px) {
                 flex-basis: calc((100% - 30px)/2);
                 max-width: 346px;
             }
                 
-            @media screen and (min-width:768px) {
+            @media screen and (min-width:1200px) {
                 margin-bottom: 30px;
                 flex-basis: calc((100% - 90px)/4);
             }
