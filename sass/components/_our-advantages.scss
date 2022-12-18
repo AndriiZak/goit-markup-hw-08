@@ -1,6 +1,8 @@
 .our-advantages {
     
     &__list {
+        max-width: 450px;
+        margin: 0 auto;
         
         padding-left: 0;
         gap: 30px;
@@ -8,10 +10,14 @@
         @media screen and (min-width:768px) {
             display: flex;
             flex-wrap: wrap;
+            
+            max-width: 767px;
         }
                 
         @media screen and (min-width:1200px) {
             display: flex;
+            margin: 0 0;
+            max-width: 1200px;
         }
     }
 
@@ -45,7 +51,7 @@
 
     &__li {
         margin-bottom: 30px;
-        flex-basis:calc((100% - 90px)/4);
+        flex-basis:calc((100% - 30px)/2);
 
       
             
